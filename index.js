@@ -2,7 +2,7 @@ const app = require('./app');
 //put port in env variable
 
 
-const PORT = process.env.port || 5000
+const PORT = process.env.PORT || 5000
 
 
 
