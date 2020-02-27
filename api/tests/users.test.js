@@ -1,6 +1,7 @@
 const request = require('supertest');
+
 const app = require('../server/app');
-const knex = require('../knexfile');
+const knex = require('../db/config');
 
 process.env.NODE_ENV = 'test';
 
