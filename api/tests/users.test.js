@@ -15,6 +15,10 @@ afterEach(() => {
     return knex.migrate.rollback();
 });
 
+afterAll(() => {
+    knex.destroy()
+})
+
 describe('Get root path', ()=>{
     test('It should respond with 200', async () =>{
         const response = await request(app).get('/');
