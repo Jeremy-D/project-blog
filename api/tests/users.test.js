@@ -20,8 +20,15 @@ afterAll(() => {
 })
 
 describe('Get root path', ()=>{
-    test('It should respond with 200', async () =>{
+    test('root path should respond with 200', async () =>{
         const response = await request(app).get('/');
+        expect(response.statusCode).toBe(200);
+    })
+});
+
+describe('get /users', ()=>{
+    test('Get /users should respond with 200', async () =>{
+        const response = await request(app).get('/users');
         expect(response.statusCode).toBe(200);
     })
 });
