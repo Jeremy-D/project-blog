@@ -24,7 +24,7 @@
   "homepage": "https://github.com/Jeremy-D/project-blog#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "knex": "^0.20.10",
     "pg": "^7.18.2"
   },
